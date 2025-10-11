@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="GaussianCross">
-  <meta name="keywords" content="GaussianCross, Point Clouds, Representation Learning">
+  <meta name="description" content="BioVLA">
+  <!-- <meta name="keywords" content="GaussianCross, Point Clouds, Representation Learning"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GaussianCross - Lei Yao</title>
+  <title>BioVLA - HUST</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -40,7 +40,7 @@
 
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -62,7 +62,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -71,10 +71,13 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">
-            GaussianCross: Cross-modal Self-supervised 3D Representation Learning via Gaussian Splatting
+            BioVLA: Towards Bio-Inspired Perception and Cognition for Vision-Language-Action Models
           </h1>
-          <h3 class="title is-4" style="color: #5c5c5c;">ACM MM 2025</h1>
-          <div class="is-size-5 publication-authors">
+          <p style="color:#777; font-size:15px; margin-top:-5px; margin-bottom:10px;">
+            <i>Last updated: <b>October 11, 2025</b></i>
+          </p>
+          <!-- <h3 class="title is-4" style="color: #5c5c5c;">ACM MM 2025</h1> -->
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://rayyoh.github.io/">Lei Yao</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -89,10 +92,10 @@
             <span class="author-block">
               <a href="https://www.eie.polyu.edu.hk/~lpchau/">Lap-Pui Chau</a><sup>1</sup>
             </span>
-          </div>
+          </div> -->
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>The Hong Kong Polytecnic University &ensp; <sup>2</sup>Huazhong University of Science and Technology</span>
+            <sup>1</sup>Huazhong University of Science and Technology</span>
             <!-- <br>
             <span class="author-block">&#8224;<i>Corresponding author</i></span> -->
           </div>
@@ -101,36 +104,36 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="static/pdf/2508.02172v1.pdf"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"> <i class="fas fa-file-pdf"></i> </span>
-                  <span>Paper</span>
+                  <span>Paper (Coming Soon)</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/RayYoh/GaussianCross"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"> <i class="fab fa-github"></i> </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                   </a>
               </span>
               <!-- Weight Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://huggingface.co/RayYoh/GaussianCross"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"> <img src="static/images/hf_icon.svg"/> </span>
                   <span>Models</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Arxiv Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2508.02172" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                 <span class="icon"> <i class="ai ai-arxiv"></i> </span>
                 <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             
             </div>
 
@@ -142,7 +145,7 @@
 </section>
 
 <!-- TLDR Section -->
-<section class="hero" id="tldr">
+<!-- <section class="hero" id="tldr">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-full-width" style="padding: 25px;">
@@ -155,9 +158,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
             <div class="box" style="margin-top: 0; margin-bottom: 1rem;">
@@ -166,7 +169,7 @@
             <p><strong>Performance comparison of GaussianCross on 3D scene understanding tasks.</strong> GaussianCross achieves superior performance across various tasks, including semantic segmentation (<i>Sem. Seg.</i>), instance segmentation (<i>Ins. Seg.</i>), and linear probing. <strong><i>Left</i></strong>: full fine-tuning results on various downstream tasks. <strong><i>Right</i></strong>: linear probing accuracy.</p>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -176,7 +179,10 @@
             <div class="column is-four-fifths">
                 <h3 class="title is-4"><b>Abstract</b></h3>
                 <div class="content has-text-justified">
-                    <p>The significance of informative and robust point representations has been widely acknowledged for 3D scene understanding. Despite existing self-supervised pre-training counterparts demonstrating promising performance, the model collapse and structural information deficiency remain prevalent due to insufficient point discrimination difficulty, yielding unreliable expressions and suboptimal performance. In this paper, we present <strong><i>GaussianCross</i></strong>, a novel cross-modal self-supervised 3D representation learning architecture integrating feed-forward 3D Gaussian Splatting (3DGS) techniques to address current challenges. GaussianCross seamlessly converts scale-inconsistent 3D point clouds into a unified cuboid-normalized Gaussian representation without missing details, enabling stable and generalizable pre-training. Subsequently, a tri-attribute adaptive distillation splatting module is incorporated to construct a 3D feature field, facilitating synergetic feature capturing of appearance, geometry, and semantic cues to maintain cross-modal consistency. To validate GaussianCross, we perform extensive evaluations on various benchmarks, including ScanNet, ScanNet200, and S3DIS. In particular, GaussianCross shows a prominent parameter and data efficiency, achieving superior performance through linear probing (0.1% parameters) and limited data training (1% of scenes) compared to state-of-the-art methods. Furthermore, GaussianCross demonstrates strong generalization capabilities, improving the full fine-tuning accuracy by 9.3% mIoU and 6.1% AP<sub>50</sub> on ScanNet200 semantic and instance segmentation tasks, respectively, supporting the effectiveness of our approach.</p>
+                    <p>We propose BioVLA, a bio-inspired vision-language-action model designed to enhance robotic fine manipulation through neuro-inspired mechanisms.
+Inspired by the human visual cortex, BioVLA introduces a bio-inspired visual encoder that simulates the brain’s region-specific responses to different visual cues, enabling multi-functional feature responses and function-aware re-response through adaptive re-weighting. This mechanism allows the model to refine visual representations by emphasizing function-specific responses while maintaining a balanced integration of multiple visual cues.
+In addition, BioVLA incorporates a vision-guided action refinement module, which dynamically adjusts the hidden states of the action decoder based on visual feedback, thereby reducing the loss of high-entropy visual information along the long VLA reasoning chain.
+Experiments conducted on the RoboTwin 2.0 platform demonstrate that BioVLA significantly outperforms existing state-of-the-art VLA models across multiple manipulation tasks.
                 </div>
             </div>
         </div>
@@ -189,62 +195,134 @@
             <div class="column is-full-width">
                 <h2 class="title is-2">Pipeline</h2>
                 <div class="box" style="margin-top: 0; margin-bottom: 1rem;">
-                    <img src="./static/images/pepeline.png" alt="Pipeline">
+                    <img src="./static/images/pipeline.png" alt="Pipeline">
                 </div>
                 <div class="content has-text-justified">
-                    <p><b>The overall architecture of GaussianCross.</b> The pipeline commences with cuboid-normalized Gaussian initialization to establish coarse primitive means. Gaussian properties are subsequently decoded by <i>G</i> with a feature field. The tri-attribute adaptive distillation splatting is performed to ensure cross-modal consistency.</p>
+                    <p><b>The pipeline begins with a bio-inspired visual encoder that models region-specific responses analogous to the human visual cortex, producing multi-functional feature representations.
+These visual responses are further refined through a function-aware re-response and adaptive re-weighting mechanism.
+Finally, a vision-guided action refinement module dynamically modulates the hidden states of the action decoder, ensuring stable perception–action alignment and mitigating information loss in long-horizon reasoning.
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<style>
+/* ===== Light (white background) table style ===== */
+.table-light {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.table-light thead {
+  background-color: #f3f3f3;
+  color: #000;
+  font-weight: 600;
+}
+
+
+.table-light th,
+.table-light td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.table-light td:first-child,
+.table-light th:first-child {
+  text-align: center;
+}
+
+
+.table-light tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table-light tbody tr:hover {
+  background-color: #f0f0f0;
+}
+</style>
+
 <section class="hero is-light is-small">
-    <div class="hero-body has-text-centered">
-        <h2 class="title is-2">Experiments</h2>
-    </div>
+  <div class="hero-body has-text-centered">
+    <h2 class="title is-2">Experiments</h2>
+  </div>
 </section>
 
 <section class="section" id="Experiments">
-    <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <div class="columns is-multiline">
-                    <div class="column is-half">
-                        <div class="box">
-                            <div class="content has-text-centered">
-                                <img src="./static/images/linear.png" alt="Linear Probing Results" width="100%"/>
-                                <p><b style="color:rgba(74, 77, 163, 0.797)">Parameter efficiency via linear probing.</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column is-half">
-                        <div class="box">
-                            <div class="content has-text-centered">
-                                <img src="./static/images/data_efficiency.png" alt="Data Efficiency Results" width="80%"/>
-                                <p><b style="color:rgba(74, 77, 163, 0.797)">Data efficiency by limited scenes and point annotations.</b></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="content has-text-centered">
-                        <img src="./static/images/sem_seg.png" alt="Semantic Segmentation Results" width="100%"/>
-                        <p><b style="color:rgba(74, 77, 163, 0.797)">Full fine-tuning semantic segmentation results.</b></p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="content has-text-centered">
-                        <img src="./static/images/ins_seg.png" alt="Instance Segmentation Results" width="60%"/>
-                        <p><b style="color:rgba(74, 77, 163, 0.797)">Full fine-tuning instance segmentation results.</b></p>
-                    </div>
-            </div>
-        </div>
-    </div> 
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-centered">
+          <h3 class="title is-4">Task Success Comparison</h3>
+          <p style="color:#555;">Trained and evaluated on the RoboTwin 2.0 platform using the Aloha-AgileX embodiment with 50 demonstrations per task.</p>
+
+          <table class="table-light">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>BioVLA</th>
+                <th>RDT</th>
+                <th>Pi0</th>
+                <th>ACT</th>
+                <th>DP</th>
+                <th>DP3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Press Stapler</b></td>
+                <td><b>87%</b></td>
+                <td>41%</td>
+                <td>62%</td>
+                <td>17%</td>
+                <td>6%</td>
+                <td>69%</td>
+              </tr>
+              <tr>
+                <td><b>Open Laptop</b></td>
+                <td><b>87%</b></td>
+                <td>59%</td>
+                <td>85%</td>
+                <td>56%</td>
+                <td>49%</td>
+                <td>82%</td>
+              </tr>
+              <tr>
+                <td><b>Hanging Mug</b></td>
+                <td><b>28%</b></td>
+                <td>23%</td>
+                <td>11%</td>
+                <td>7%</td>
+                <td>8%</td>
+                <td>17%</td>
+              </tr>
+            </tbody>
+            </table>
+            <p style="color:#777; font-size:15px; margin-top:10px;">
+            Additional tasks and results will be continuously updated as BioVLA is evaluated on broader manipulation benchmarks.
+            </p>
+          </div>
+
+
+        <!-- 原实验图片部分保持注释 -->
+        <!--
+        <div class="columns is-multiline"> ... </div>
+        -->
+      </div>
+    </div>
+  </div>
 </section>
 
 
-<section class="hero is-light is-small">
+
+<!-- <section class="hero is-light is-small">
     <div class="hero-body has-text-centered">
         <h2 class="title is-2">Visualization</h2>
     </div>
@@ -287,9 +365,9 @@
             </div>
         </div>
     </div> 
-</section>
+</section> -->
 
-<section class="section" id="Acknowledgment">
+<!-- <section class="section" id="Acknowledgment">
     <div class="container is-max-desktop content">
       <h2 class="title">Acknowledgment 👏</h2>
       <p>The research work was conducted in the JC STEM Lab of Machine Learning and Computer Vision funded by The Hong Kong Jockey Club Charities Trust. </p>
@@ -314,7 +392,7 @@ or
   year={2025}
 }</code></pre>
     </div>
-</section>
+</section> -->
 
 <footer class="footer">
   <div class="container">
