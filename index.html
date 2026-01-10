@@ -269,19 +269,30 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
         <div class="content has-text-centered">
 
           <h3 class="title is-4">Task Success Comparison (Clean & Randomized)</h3>
+
           <p style="color:#555;">
             Trained and evaluated on the <b>RoboTwin&nbsp;2.0</b> platform using the
             <b>Aloha-AgileX</b> embodiment with 50 demonstrations per task.
-            The best-performing result in each row is highlighted in <span style="color:#d60000; font-weight:700;">red</span>,
-            and the second-best in <span style="color:#008000; font-weight:700;">green</span>.
+            The best-performing result in each row is highlighted in
+            <span style="color:#d60000; font-weight:700;">red</span>,
+            and the second-best in
+            <span style="color:#008000; font-weight:700;">green</span>.
           </p>
+
           <p style="color:#777; font-size:15px; margin-top:10px;">
-          Note: OpenVLA-OFT results are reproduced from the official source code,
-          while all other baselines are taken from the RoboTwin&nbsp;2.0 leaderboard.
-        </p>
+            Note: OpenVLA-OFT results are reproduced from the official source code,
+            while all other baselines are taken from the RoboTwin&nbsp;2.0 leaderboard.
+          </p>
 
+          <!-- ✅ vertical-align: middle 全局规则 -->
+          <style>
+            td[rowspan] {
+              vertical-align: middle !important;
+            }
+          </style>
 
-          <table class="table is-fullwidth is-hoverable" style="background-color:#fafafa; border-radius:8px;">
+          <table class="table is-fullwidth is-hoverable"
+                 style="background-color:#fafafa; border-radius:8px;">
             <thead style="background-color:#f0f0f0;">
               <tr>
                 <th>Task</th>
@@ -295,9 +306,11 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
                 <th>OpenVLA-OFT</th>
               </tr>
             </thead>
+
             <tbody>
+
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Click Alarmclock</b></td>
+                <td rowspan="2"><b>Click Alarmclock</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">79%</td><td>61%</td><td>63%</td><td>32%</td><td>61%</td><td style="color:#008000;font-weight:700;">77%</td><td>75%</td>
               </tr>
@@ -307,7 +320,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Dump Bin Bigbin</b></td>
+                <td rowspan="2"><b>Dump Bin Bigbin</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">93%</td><td>64%</td><td>83%</td><td>68%</td><td>49%</td><td style="color:#008000;font-weight:700;">85%</td><td>22%</td>
               </tr>
@@ -317,7 +330,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Hanging Mug</b></td>
+                <td rowspan="2"><b>Hanging Mug</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">31%</td><td style="color:#008000;font-weight:700;">23%</td><td>11%</td><td>7%</td><td>8%</td><td>17%</td><td>10%</td>
               </tr>
@@ -327,7 +340,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Open Laptop</b></td>
+                <td rowspan="2"><b>Open Laptop</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">86%</td><td>59%</td><td style="color:#008000;font-weight:700;">85%</td><td>56%</td><td>49%</td><td>82%</td><td>40%</td>
               </tr>
@@ -337,7 +350,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Place Cans Plasticbox</b></td>
+                <td rowspan="2"><b>Place Cans Plasticbox</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">69%</td><td>6%</td><td>34%</td><td>16%</td><td>40%</td><td style="color:#008000;font-weight:700;">48%</td><td>4%</td>
               </tr>
@@ -347,7 +360,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Press Stapler</b></td>
+                <td rowspan="2"><b>Press Stapler</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">88%</td><td>41%</td><td>62%</td><td>17%</td><td>6%</td><td style="color:#008000;font-weight:700;">69%</td><td>14%</td>
               </tr>
@@ -357,7 +370,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Put Bottles Dustbin</b></td>
+                <td rowspan="2"><b>Put Bottles Dustbin</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">61%</td><td>21%</td><td>54%</td><td>27%</td><td>22%</td><td style="color:#008000;font-weight:700;">60%</td><td>33%</td>
               </tr>
@@ -367,7 +380,17 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Shake Bottle</b></td>
+                <td rowspan="2"><b>Scan Object</b></td>
+                <td><i>Clean</i></td>
+                <td style="color:#008000;font-weight:700;">25%</td><td>4%</td><td>18%</td><td>2%</td><td>9%</td><td style="color:#d60000;font-weight:700;">31%</td><td>3%</td>
+              </tr>
+              <tr>
+                <td><i>Randomized</i></td>
+                <td style="color:#d60000;font-weight:700;">12%</td><td style="color:#008000;font-weight:700;">1%</td><td style="color:#008000;font-weight:700;">1%</td><td>0%</td><td>0%</td><td style="color:#008000;font-weight:700;">1%</td><td style="color:#008000;font-weight:700;">1%</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2"><b>Shake Bottle</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">98%</td><td>74%</td><td style="color:#008000;font-weight:700;">97%</td><td>74%</td><td>65%</td><td style="color:#d60000;font-weight:700;">98%</td><td>22%</td>
               </tr>
@@ -377,7 +400,7 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
               </tr>
 
               <tr>
-                <td rowspan="2" style="vertical-align: middle;"><b>Turn Switch</b></td>
+                <td rowspan="2"><b>Turn Switch</b></td>
                 <td><i>Clean</i></td>
                 <td style="color:#d60000;font-weight:700;">49%</td><td>35%</td><td>27%</td><td>5%</td><td>36%</td><td style="color:#008000;font-weight:700;">46%</td><td>39%</td>
               </tr>
@@ -386,16 +409,16 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
                 <td style="color:#d60000;font-weight:700;">32%</td><td>15%</td><td>23%</td><td>2%</td><td>1%</td><td>8%</td><td style="color:#008000;font-weight:700;">26%</td>
               </tr>
 
-              <!-- Average rows -->
               <tr style="border-top:2px solid #ccc; background-color:#f9f9f9;">
-                <td rowspan="2" style="vertical-align: middle;"><b>Average</b></td>
+                <td rowspan="2"><b>Average</b></td>
                 <td><i>Clean</i></td>
-                <td style="color:#d60000;font-weight:700;">70.7%</td><td>43.2%</td><td>57.0%</td><td>33.1%</td><td>36.0%</td><td style="color:#008000;font-weight:700;">63.8%</td><td>25.8%</td>
+                <td style="color:#d60000;font-weight:700;">68%</td><td>39%</td><td>53%</td><td>30%</td><td>35%</td><td style="color:#008000;font-weight:700;">61%</td><td>26%</td>
               </tr>
               <tr style="border-bottom:2px solid #ccc; background-color:#f9f9f9;">
                 <td><i>Randomized</i></td>
-                <td style="color:#d60000;font-weight:700;">23.2%</td><td>19.0%</td><td style="color:#008000;font-weight:700;">22.9%</td><td>6.2%</td><td>3.3%</td><td>13.8%</td><td>13.9%</td>
+                <td style="color:#d60000;font-weight:700;">23%</td><td>19%</td><td style="color:#008000;font-weight:700;">21%</td><td>2%</td><td>1%</td><td>13%</td><td>14%</td>
               </tr>
+
             </tbody>
           </table>
 
@@ -408,7 +431,6 @@ Finally, a vision-guided action refinement module dynamically modulates the hidd
     </div>
   </div>
 </section>
-
 
 <!-- ===== Visualization Section ===== -->
 <section class="hero is-light is-small" id="Visualization">
